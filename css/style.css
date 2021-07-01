@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bd-container {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.l-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav .nav_logo {
+    margin: 0px 40px;
+}
+
+nav .nav-search-box {
+    display: flex;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 80px;
+    border-bottom: 1px solid #7A7A7A;
+}
+
+nav .nav-search-box input {
+    border: none;
+    outline: none;
+    background: #FFFFFF;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 13px;
+    width: 350px;
+}
+
+nav .nav-search-box i {
+    color: #0a5071;
+    font-size: 20px;
+    background: #FFFFFF;
+    height: 100%;
+    padding: 8px;
+    position: relative;
+}
+
+.my-user {
+    display: flex;
+    align-items: center;
+}
+
+nav .my-user span {
+    font-size: 12px;
+}
+
+nav .shop-cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+nav .cart-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-radius: 100%;
+    font-size: 10px;
+    background: #2EC4B6;
+    color: #FFFFFF;
+}
+
+nav .bar {
+    width: 30px;
+    border: 1px solid #7A7A7A;
+    transform: rotate(90deg);
+}
+
+nav .flags {
+    display: flex;
+    margin: 0 15px;
+}
+
+nav .nav-toggle {
+    display: none;
+    position: relative;
+    margin: 0;
+    padding: 5px 0px;
+}
+
+.side-menu {
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    background: #F2F2F2;
+    width: 80%;
+    height: 100vh;
+    transition: .5s;
+}
+
+@media screen and (max-width: 1199.98px) {
+    .show-menu {
+        left: 0px;
+        transition: .5s;
+    }
+}
+
+.close-side-menu i {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+#side_menu_options {
+    height: 100%;
+}
+
+#my-account a, #my-orders a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0px 5px;
+    color: #000000;
+}
+
+#menu-sections {
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#menu-sections ul li, #more-informations ul li {
+    list-style: none;
+    padding: 10px 0px;
+}
+
+#menu-sections ul li a, #more-informations ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+}
+
+@media screen and (max-width: 1199.98px) {
+    nav .my-user, nav .bar, nav .flags {
+        display: none;
+    }
+
+    nav .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 14px;
+        left: 10px;
+    }
+
+    nav .shop-cart {
+        position: absolute;
+        top: 22px;
+        right: 10px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    nav .nav-search-box {
+        margin: 5px 8px;
+        width: 100%;
+    }
+
+    nav .nav-search-box input {
+        width: 100%;
+    }
+}
