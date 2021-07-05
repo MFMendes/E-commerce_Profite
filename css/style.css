@@ -192,6 +192,7 @@ nav .nav-toggle {
     opacity: 0.4;
 }
 
+/*---===== Media Queries =====---*/
 @media screen and (max-width: 1199.98px) {
     nav .my-user, nav .bar, nav .flags {
         display: none;
@@ -223,7 +224,7 @@ nav .nav-toggle {
     }
 }
 
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 992px) {
     .swiper-text {
         position: absolute;
         width: 100%;
@@ -236,11 +237,19 @@ nav .nav-toggle {
     }
 
     .swiper-text .swiper-text-title span {
-        font-size: 18px;
+        font-size: 28px;
         font-weight: 600;
     }
 
     .swiper-img {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-text .swiper-text-title span {
+        font-size: 17px;
+        letter-spacing: 1px;
+        font-weight: 600;
     }
 }
