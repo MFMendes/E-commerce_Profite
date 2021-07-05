@@ -7,26 +7,23 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.bd-container {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
+/*---===== Header =====---*/
 .l-header {
+    border: 1px solid green;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
 }
 
+/*---===== Navbar =====---*/
 nav {
-    display: flex;
     position: relative;
+    display: flex;
     justify-content: center;
     text-align: center;
     padding: 15px 0px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0px 10px;
 }
 
 nav .nav_logo {
@@ -53,11 +50,7 @@ nav .nav-search-box input {
 
 nav .nav-search-box i {
     color: #0a5071;
-    font-size: 20px;
-    background: #FFFFFF;
-    height: 100%;
     padding: 8px;
-    position: relative;
 }
 
 .my-user {
@@ -70,7 +63,6 @@ nav .my-user span {
 }
 
 nav .shop-cart {
-    position: relative;
     display: flex;
     align-items: center;
     margin: 0 15px;
@@ -78,14 +70,13 @@ nav .shop-cart {
 
 nav .cart-quantity {
     display: flex;
-    align-items: center;
     justify-content: center;
     width: 15px;
     height: 15px;
     margin: 0 5px;
-    border-radius: 100%;
     font-size: 10px;
     background: #2EC4B6;
+    border-radius: 100%;
     color: #FFFFFF;
 }
 
@@ -102,25 +93,24 @@ nav .flags {
 
 nav .nav-toggle {
     display: none;
-    position: relative;
-    margin: 0;
     padding: 5px 0px;
 }
 
 .side-menu {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: -100%;
-    background: #F2F2F2;
     width: 80%;
     height: 100vh;
     transition: .5s;
+    background: #F2F2F2;
 }
 
 @media screen and (max-width: 1199.98px) {
     .show-menu {
         left: 0px;
         transition: .5s;
+        z-index: 2;
     }
 }
 
@@ -159,6 +149,49 @@ nav .nav-toggle {
     color: #000000;
 }
 
+/*---===== Swiper section =====---*/
+.swiper-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background: #011627;
+    color: #FFFFFF;
+}
+
+.swiper-text .swiper-text-title span {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.swiper-text .swiper-text-title #swiper-text-line {
+    width: 15%;
+    height: 5px;
+    margin-top: 5px;
+    background: #FF9F1C;
+}
+
+.swiper-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 50%;
+}
+
+.swiper-img img {
+    width: 100%;
+} 
+
+.swiper-img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2EC4B6;
+    opacity: 0.4;
+}
+
 @media screen and (max-width: 1199.98px) {
     nav .my-user, nav .bar, nav .flags {
         display: none;
@@ -186,6 +219,28 @@ nav .nav-toggle {
     }
 
     nav .nav-search-box input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .swiper-text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-text-title {
+        position: relative;
+        z-index: 1;
+    }
+
+    .swiper-text .swiper-text-title span {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .swiper-img {
         width: 100%;
     }
 }

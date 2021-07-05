@@ -11,6 +11,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -43,15 +46,15 @@
         <hr class="bar">
 
         <div class="flags">
-          <div class="br p-1">
+          <div class="p-1">
             <img src="img/BR.png">
           </div>
           
-          <div class="br p-1">
+          <div class="p-1">
             <img src="img/ES.png">
           </div>
 
-          <div class="br p-1">
+          <div class="p-1">
             <img src="img/GB.png">
           </div>
         </div>
@@ -61,6 +64,7 @@
         </div>
       </nav>
 
+      <!--===== Barra de navegação responsiva=====-->
       <div class="side-menu" id="side_menu">
         <div class="close-side-menu" id="close_side_menu">
           <i class="fas fa-times fa-lg"></i>
@@ -186,8 +190,52 @@
       </div>
     </header>
 
+    <section class="swiper">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide d-flex">
+            <div class="swiper-text">
+              <div class="d-block swiper-text-title">
+                <span>
+                  Nossa especialidade: <br>
+                  experiência de compra
+                </span>
+                <div id="swiper-text-line"></div>
+              </div>
+            </div>
+
+            <div class="swiper-img">
+              <img src="img/slide1.png" class="img-fluid">
+              <div class="swiper-img-overlay"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+          <div class="swiper-slide">Slide 10</div>
+        </div>
+
+
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
 
     <!-- Script JS -->
     <script src="js/script.js"></script>
