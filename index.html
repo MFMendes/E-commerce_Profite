@@ -22,30 +22,30 @@
   <body>
     
     <!--===== Barra de navegação =====-->
-    <header class="l-header" id="header">
+    <header class="header">
       <nav class="nav">
-        <a href="#" class="nav_logo">
-          <img src="img/Logo.png" alt="">
+        <a href="#" class="nav-logo">
+          <img src="img/Logo.png">
         </a>
 
-        <div class="nav-search-box" id="nav-search-box">
+        <div class="nav-search-box">
           <input class="p-0" type="search" placeholder="O que está procurando?">
           <i class="fas fa-search"></i>
         </div>
 
-        <div class="my-user" id="my-user"> 
+        <div class="nav-my-user"> 
           <i class="fas fa-user-circle fa-lg p-1"></i>
           <span>Minha conta</span>
         </div>
 
-        <div class="shop-cart">
+        <div class="nav-shop-cart">
           <i class="fas fa-shopping-cart"></i>
-          <div class="cart-quantity">1</div>
+          <div class="nav-cart-quantity">1</div>
         </div>
 
-        <hr class="bar">
+        <hr class="nav-bar">
 
-        <div class="flags">
+        <div class="nav-idioms">
           <div class="p-1">
             <img src="img/BR.png">
           </div>
@@ -59,34 +59,34 @@
           </div>
         </div>
 
-        <div class="nav-toggle" id="nav_toggle">
+        <div class="nav-toggle">
           <i class="fas fa-bars"></i>
         </div>
       </nav>
 
       <!--===== Barra de navegação responsiva=====-->
-      <div class="side-menu" id="side_menu">
-        <div class="close-side-menu" id="close_side_menu">
+      <div class="side-menu">
+        <div class="close-side-menu">
           <i class="fas fa-times fa-lg"></i>
         </div>
 
-        <div class="d-flex flex-column justify-content-between" id="side_menu_options">
-          <div class="d-flex flex-column">
-            <div class="d-flex flex-column pt-2 pb-1 pl-3" id="side-menu-user">
-              <div class="my-user" id="my-user"> 
+        <div class="side-menu-options">
+          <div class="side-menu-options-content">
+            <div class="side-menu-account-options">
+              <div class="icon-user"> 
                 <i class="fas fa-user-circle fa-2x p-1"></i>
                 <span>Marcelo</span>
               </div>
               
               <div class="d-flex pt-2">
-                <div class="my-account" id="my-account">
+                <div class="my-account">
                   <a href="#">
                     <i class="fas fa-cog"></i>
                     Minha conta
                   </a>
                 </div>
 
-                <div class="my-orders" id="my-orders">
+                <div class="my-orders">
                   <a href="#">
                     <i class="fas fa-box"></i>
                     Meus pedidos
@@ -246,10 +246,14 @@
         </div>
 
         <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next">
+          <i class="fas fa-angle-right fa-2x"></i>
+        </div>
 
-
+        <div class="swiper-button-prev">
+          <i class="fas fa-angle-left fa-2x"></i>
+        </div>
+        
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
       </div>

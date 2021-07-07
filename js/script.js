@@ -1,7 +1,7 @@
 /*==================== SHOW MENU ====================*/
 const showMenu = (toggleId, sideMenuClass) => {
-  const toggle = document.getElementById(toggleId);
-  const sideMenu = document.getElementById(sideMenuClass);
+  const toggle = document.querySelector(toggleId);
+  const sideMenu = document.querySelector(sideMenuClass);
   
   // Validate that variables exist
   if(toggle && sideMenu){
@@ -11,11 +11,11 @@ const showMenu = (toggleId, sideMenuClass) => {
     })
   }
 }
-showMenu('nav_toggle','side_menu');
+showMenu('.nav-toggle','.side-menu');
 
 const closeMenu = (btnClose, sideMenuClass) => {
-  const close = document.getElementById(btnClose);
-  const sideMenu = document.getElementById(sideMenuClass);
+  const close = document.querySelector(btnClose);
+  const sideMenu = document.querySelector(sideMenuClass);
 
   if (close && sideMenu) {
     close.addEventListener('click', () => {
@@ -23,8 +23,7 @@ const closeMenu = (btnClose, sideMenuClass) => {
     })
   }
 }
-closeMenu('close_side_menu','side_menu')
-
+closeMenu('.close-side-menu','.side-menu')
 
 /*==================== Initialize Swiper ====================*/
 var swiper = new Swiper('.swiper-container', {
@@ -34,7 +33,8 @@ var swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
   pagination: {
-    el: '.swiper-pagination'
+    el: '.swiper-pagination',
+    clickable: true,
   },
   mousewheel: true,
   keyboard: true,
