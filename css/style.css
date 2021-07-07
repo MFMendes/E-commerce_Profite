@@ -129,8 +129,6 @@ nav .nav-toggle {
     align-items: center;
 }
 
-
-
 @media screen and (max-width: 1199.98px) {
     .show-menu {
         left: 0px;
@@ -154,16 +152,22 @@ nav .nav-toggle {
     color: #000000;
 }
 
-#menu-sections {
+.menu-sections, .more-informations {
+    padding: 5px;
     border-bottom: 1px solid #CCCCCC;
 }
 
-#menu-sections ul li, #more-informations ul li {
+.menu-sections ul li, .more-informations ul li {
     list-style: none;
     padding: 10px 0px;
 }
 
-#menu-sections ul li a, #more-informations ul li a{
+.menu-sections ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-sections ul li a, .more-informations ul li a{
     text-decoration: none;
     font-size: 13px;
     font-weight: 600;
@@ -232,6 +236,7 @@ nav .nav-toggle {
 .swiper-pagination-bullet-active {
     background-color: #FF9F1C;
 }
+
 /*---===== Media Queries =====---*/
 @media screen and (max-width: 1199.98px) {
     nav .nav-my-user, nav .nav-bar, nav .nav-idioms {
