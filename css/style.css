@@ -104,6 +104,7 @@ nav .nav-toggle {
     height: 100vh;
     transition: .5s;
     background: #F2F2F2;
+    overflow-y: auto;
 }
 
 .side-menu-options {
@@ -237,6 +238,73 @@ nav .nav-toggle {
     background-color: #FF9F1C;
 }
 
+/*---===== Products section =====---*/
+.products {
+    border: 1px solid red;
+    padding: 10px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 10px 8px;
+    border-radius: 5px;
+}
+
+.product-card:hover {
+    transition: .3s;
+    /* box-shadow: -2px 12px 10px 0px #bfbfbf; */
+    box-shadow: -2px 0px 10px 0px #bfbfbf;
+}
+
+.product-card-info {
+    display: block;
+}
+
+.product-card-info .product-title {
+    font-size: 12px;
+}
+
+.product-card-info .product-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product-card-info .product-rating i {
+    margin: 0px 2px;
+    font-size: 13px;
+    color: #FF9F1C;
+}
+
+.product-card-info .product-old-price {
+    text-align: center;
+    font-size: 10px;
+    margin: 7px 0px;
+    text-decoration: line-through;
+}
+
+.product-card-info .product-current-price {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    color: #2EC4B6;
+}
+
+.product-card-info .product-quantity-parcels {
+    text-align: center;
+    font-size: 10px;
+}
+
+.product-card .btn-buy {
+    font-size: 14px;
+    width: 160px;
+    background: #2EC4B6;
+    color: #FFFFFF;
+}
 /*---===== Media Queries =====---*/
 @media screen and (max-width: 1199.98px) {
     nav .nav-my-user, nav .nav-bar, nav .nav-idioms {
