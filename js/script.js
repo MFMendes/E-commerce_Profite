@@ -40,15 +40,21 @@ var swiper = new Swiper('.swiper-container', {
   keyboard: true,
 });
 
+/*==================== Products Swiper ====================*/
 var swiper = new Swiper('.swiper-container-products', {
   slidesPerView: 1,
   spaceBetween: 10,
   // init: false,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true,
+  // },
   breakpoints: {
+    300: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    
     640: {
       slidesPerView: 2,
       spaceBetween: 20,
@@ -58,7 +64,7 @@ var swiper = new Swiper('.swiper-container-products', {
       spaceBetween: 40,
     },
     1024: {
-      slidesPerView: 5,
+      slidesPerView: 4,
       spaceBetween: 50,
     },
   }
