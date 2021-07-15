@@ -41,31 +41,44 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 /*==================== Products Swiper ====================*/
-var swiper = new Swiper('.swiper-container-products', {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  // init: false,
-  // pagination: {
-  //   el: '.swiper-pagination',
-  //   clickable: true,
-  // },
-  breakpoints: {
-    300: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-    },
-    
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 40,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 10,
-    },
-  }
+$('.container').slick({
+  dots: true,
+  infinite: false,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  prevArrow: $('.button-prev'),
+  nextArrow: $('.button-next'),
+  responsive: [
+      {
+      breakpoint: 1024,
+          settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+          }
+      },
+      {
+      breakpoint: 770,
+          settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+          }
+      },
+      {
+      breakpoint: 600,
+          settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+          }
+      },
+      {
+      breakpoint: 480,
+          settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+          }
+      }
+  ]
 });
