@@ -249,9 +249,16 @@ nav .nav-toggle {
     padding: 20px 0px;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
 .slick-text-title {
+    border: 1px solid red;
     width: 1200px;
     margin: 0 auto;
+    padding: 0px 10px;
 }
 
 .slick-text-line {
