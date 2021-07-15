@@ -41,7 +41,7 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 /*==================== Products Swiper ====================*/
-$('.container').slick({
+$('.products .container').slick({
   dots: true,
   infinite: false,
   speed: 500,

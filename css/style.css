@@ -16,9 +16,9 @@ body {
 /*---===== Header =====---*/
 .header {
     width: 100%;
-    /* position: fixed; */
     top: 0;
     left: 0;
+    background: #FFFFFF;
 }
 
 /*---===== Navbar =====---*/
@@ -255,7 +255,6 @@ nav .nav-toggle {
 }
 
 .slick-text-title {
-    border: 1px solid red;
     width: 1200px;
     margin: 0 auto;
     padding: 0px 10px;
@@ -341,6 +340,76 @@ nav .nav-toggle {
     background: #2EC4B6;
     color: #FFFFFF;
 }
+
+/*---===== Footer =====---*/
+.footer {
+    padding: 20px 0px;
+    background: #011627;
+    border-bottom: 8px solid #2EC4B6;
+}
+
+.footer .container { 
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.footer .slick-text-title span {
+    color: #FFFFFF;
+}
+
+.footer .slick-text-line {
+    width: 55px;
+    height: 5px;
+    margin-top: 5px;
+    background: #FF9F1C;
+}
+
+.footer .container-locale {
+    display: flex;
+    padding: 10px;
+}
+
+.footer .locale-sp, .footer .locale-rj {
+    margin: 0px 30px;
+    color: #FFFFFF;
+}
+
+.footer .locale-sp span, .footer .locale-rj span{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.footer .locale-sp p, .footer .locale-rj p {
+    margin-bottom: 3px;
+    font-size: 13px;
+}
+
+.footer .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer .contacts .btn-contact, .footer .contacts .btn-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    width: 170px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 2px;
+    background: #FF9F1C;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.footer .company {
+    display: flex;
+    align-items: flex-end;
+}
+
 /*---===== Media Queries =====---*/
 @media screen and (max-width: 1199.98px) {
     nav .nav-my-user, nav .nav-bar, nav .nav-idioms {
@@ -370,6 +439,12 @@ nav .nav-toggle {
 
     nav .nav-search-box input {
         width: 100%;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
