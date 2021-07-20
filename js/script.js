@@ -45,40 +45,26 @@ $('.products .container').slick({
   dots: true,
   infinite: false,
   speed: 500,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  prevArrow: $('.button-prev'),
-  nextArrow: $('.button-next'),
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  // prevArrow: $('.button-prev'),
+  // nextArrow: $('.button-next'),
   responsive: [
-      {
-      breakpoint: 1024,
-          settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
-          }
-      },
-      {
+    // {
+    //   breakpoint: 1024,
+    //   settings: {
+    //     slidesToShow: 3,
+    //     slidesToScroll: 3,
+    //     infinite: true,
+    //     dots: true
+    //   }
+    // },
+    {
       breakpoint: 770,
-          settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-          }
-      },
-      {
-      breakpoint: 600,
-          settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-          }
-      },
-      {
-      breakpoint: 480,
-          settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-          }
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
       }
+    }
   ]
 });
